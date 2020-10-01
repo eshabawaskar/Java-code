@@ -1,14 +1,20 @@
-import java.util.*;
-public class Temparature {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Celsius temp: ");
-        int cel = sc.nextInt();
-        System.out.println("Enter Fahrenheit temp: ");
-        int fah = sc.nextInt();
-        System.out.println("Celsius = " + cel);
-        System.out.println("Fahrenheit = " + fah);
-        System.out.println("Celsius to Fahrenheit: " + (1.8 * cel + 32));
-        System.out.println("Fahrenheit to Celsius: " + ((fah - 32)*0.5556));
-    }
+import java.util.Scanner;
+
+class Cels{
+	
+	public static void main(String args[])
+	{
+		
+		Scanner userin = new Scanner(System.in);
+		System.out.println("Enter Temp in Celsius: ");
+		
+		float input =userin.nextFloat();
+		
+		float fahr=((9*input)/5)+32;
+		float kel = input+273.15f;
+		
+		System.out.println("Temp in Celsius: "+input);
+		System.out.println("Temp in Fahreinheit: "+fahr);
+		System.out.println("Temp in Kelvin: "+kel);
+	}
 }
