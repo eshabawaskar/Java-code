@@ -6,15 +6,15 @@ class Cels{
 	{
 		
 		Scanner userin = new Scanner(System.in);
-		System.out.println("Enter Temp in Celsius: ");
+		System.out.println("Enter Temperature in Celsius: ");
 		
 		float input =userin.nextFloat();
 		
 		float fahr=((9*input)/5)+32;
 		float kel = input+273.15f;
 		
-		System.out.println("Temp in Celsius: "+input);
-		System.out.println("Temp in Fahreinheit: "+fahr);
-		System.out.println("Temp in Kelvin: "+kel);
+		System.out.println("Temperature in Celsius: "+input);
+		System.out.println("Temperature in Fahreinheit: "+fahr);
+		System.out.println("Temperature in Kelvin: "+kel);
 	}
 }
